@@ -112,7 +112,9 @@ module.exports = plugin.withOptions(
     return {
       darkMode: 'class',
       theme: {
-        colors: map,
+        extend: {
+          colors: map,
+        },
       },
     };
   },
