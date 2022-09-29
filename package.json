@@ -1,0 +1,16 @@
+{
+  "name": "dark-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8"
+  }
+}
