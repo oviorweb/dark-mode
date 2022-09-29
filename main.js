@@ -1,6 +1,10 @@
 const plugin = require('tailwindcss/plugin');
 const c = require('tailwindcss/colors');
 
+/**
+ * It takes a hexadecimal color code and returns the RGB equivalent
+ * @param hex - The hexadecimal color code to convert to RGB.
+ */
 const hexToRgb = (hex) =>
   hex
     .replace(
