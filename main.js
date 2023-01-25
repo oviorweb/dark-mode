@@ -81,9 +81,13 @@ module.exports = plugin.withOptions(
         }
       });
 
+      if (options.darkColors?.bg !== '') {
+        dark['--color-bg'] = options.darkColors?.bg;
+      }
+
       addBase({
-        ':root': obj,
-        '.dark': {
+        ':root[data-theme="light"]': obj,
+        ':root[data-theme="dark"]': {
           '-webkit-font-smoothing': 'antialiased',
           '-moz-osx-font-smoothing': 'grayscale',
           ...dark,
